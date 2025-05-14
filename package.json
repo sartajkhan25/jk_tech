@@ -1,0 +1,13 @@
+{
+  "name": "document-management-app",
+  "version": "1.0.0",
+  "description": "Document Management Application",
+  "scripts": {
+    "start": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test": "concurrently \"cd backend && npm test\" \"cd frontend && npm test\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+} 
